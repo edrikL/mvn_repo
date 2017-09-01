@@ -1,6 +1,8 @@
 
 @echo off
 
+git branch -av
+
 set cur_dir=%cd%
 echo %cur_dir%
 
