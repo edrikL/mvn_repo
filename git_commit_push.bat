@@ -1,4 +1,5 @@
 
+@echo off
 
 set cur_dir=%cd%
 echo %cur_dir%
