@@ -9,12 +9,12 @@ echo %cur_dir%
 
 echo ..........................................
 echo switch to master branch..
-echo checkout mvn_repo..
+echo checkout master..
 
 call git checkout master
 
-echo git commit mvn_repo..
 echo ....................................................
+echo git commit master..
 call git add .
 call git commit -m "repo"
 call git push --set-upstream origin master
