@@ -22,16 +22,8 @@
 			<artifactId>commons-logging</artifactId>
 			<version>1.2</version>
 		</dependency>
-
 	</dependencies>
 	<build>
 		 <finalName>alipay-sdk-java</finalName>
 	</build>
-	<distributionManagement>
-		<repository>
-			<id>internal.repo</id>
-			<name>Temporary Staging Repository</name>
-			<url>file://${basedir}/../../mvn_repo</url>
-		</repository>
-	</distributionManagement>
 </project>

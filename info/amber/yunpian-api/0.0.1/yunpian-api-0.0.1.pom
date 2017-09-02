@@ -1,17 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>info.amber</groupId>
+		<artifactId>uni_amber</artifactId>
+		<version>1.0.0</version>
+	</parent>
 	<groupId>info.amber</groupId>
 	<artifactId>yunpian-api</artifactId>
 	<version>0.0.1</version>
 	<name>yunpian-api</name>
 	<url>https://github.com/edrikL/yunpian-api.git</url>
-
-	<!-- <scm> -->
-	<!-- <connection>scm:https://github.com/edrikL/yunpian-api.git</connection> -->
-	<!-- <developerConnection>scm:https://github.com/edrikL/yunpian-api.git</developerConnection> -->
-	<!-- <url>https://github.com/edrikL/yunpian-api.git</url> -->
-	<!-- </scm> -->
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<github.global.server>github</github.global.server>
@@ -119,13 +117,5 @@
 	</dependencies>
 	<build>
 		<finalName>yunpian-api</finalName>
-	 
 	</build>
-	<distributionManagement>
-		<repository>
-			<id>internal.repo</id>
-			<name>Temporary Staging Repository</name>
-			<url>file://${basedir}/../../mvn_repo</url>
-		</repository>
-	</distributionManagement>
 </project>
