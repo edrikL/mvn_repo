@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>info.amber</groupId>
-  <artifactId>wxpay-api</artifactId>
+  <artifactId>amber_uni</artifactId>
   <versioning>
     <release>1.0.0</release>
     <versions>
       <version>1.0.0</version>
     </versions>
-    <lastUpdated>20170916061857</lastUpdated>
+    <lastUpdated>20170916061843</lastUpdated>
   </versioning>
 </metadata>
