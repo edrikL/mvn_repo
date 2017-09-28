@@ -30,18 +30,16 @@
 		</dependency>
 		<dependency>
 			<groupId>info.amber</groupId>
-			<artifactId>amber-core</artifactId>
+			<artifactId>amber_core</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>info.amber</groupId>
-			<artifactId>wxpay-api</artifactId>
+			<artifactId>amber_wxpay-api</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>info.amber</groupId>
-			<artifactId>alipay-sdk-java-v1</artifactId>
+			<artifactId>amber_alipay-sdk-java</artifactId>
 		</dependency>
-
-
 		<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>ST4</artifactId>

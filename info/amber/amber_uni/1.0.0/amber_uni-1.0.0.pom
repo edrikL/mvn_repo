@@ -17,6 +17,7 @@
 		<mvn.repo.dir>/workspaceJEE/mvn_repo</mvn.repo.dir>
 		<amber.version>1.0.0</amber.version>
 		<spring.version>3.2.18.RELEASE</spring.version>
+		<amber.alipay.sdk.version>2.0.0.20170901</amber.alipay.sdk.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -39,7 +40,7 @@
 			<dependency>
 				<groupId>info.amber</groupId>
 				<artifactId>amber_alipay-sdk-java</artifactId>
-				<version>${amber.version}</version>
+				<version>${amber.alipay.sdk.version}</version>
 			</dependency>
 
 			<dependency>
