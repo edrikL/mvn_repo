@@ -16,7 +16,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<mvn.repo.dir>/workspaceJEE/mvn_repo</mvn.repo.dir>
 		<amber.version>1.0.0</amber.version>
-		<spring.version>3.2.2.RELEASE</spring.version>
+		<spring.version>3.2.18.RELEASE</spring.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -28,23 +28,23 @@
 			</dependency>
 			<dependency>
 				<groupId>info.amber</groupId>
-				<artifactId>amber-core</artifactId>
+				<artifactId>amber_core</artifactId>
 				<version>${amber.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>info.amber</groupId>
-				<artifactId>wxpay-api</artifactId>
+				<artifactId>amber_wxpay-api</artifactId>
 				<version>${amber.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>info.amber</groupId>
-				<artifactId>alipay-sdk-java</artifactId>
+				<artifactId>amber_alipay-sdk-java</artifactId>
 				<version>${amber.version}</version>
 			</dependency>
 
 			<dependency>
 				<groupId>info.amber</groupId>
-				<artifactId>alipay-sdk-java-v1</artifactId>
+				<artifactId>amber_alipay-sdk-java-v1</artifactId>
 				<version>${amber.version}</version>
 			</dependency>
 
