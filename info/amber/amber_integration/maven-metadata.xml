@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>info.amber</groupId>
-  <artifactId>amber_uni</artifactId>
+  <artifactId>amber_integration</artifactId>
   <versioning>
     <release>1.0.0</release>
     <versions>
       <version>1.0.0</version>
     </versions>
-    <lastUpdated>20170928092912</lastUpdated>
+    <lastUpdated>20170928093027</lastUpdated>
   </versioning>
 </metadata>

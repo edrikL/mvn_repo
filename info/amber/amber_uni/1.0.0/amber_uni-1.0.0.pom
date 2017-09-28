@@ -37,6 +37,18 @@
 				<version>${amber.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>info.amber</groupId>
+				<artifactId>alipay-sdk-java</artifactId>
+				<version>${amber.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>info.amber</groupId>
+				<artifactId>alipay-sdk-java-v1</artifactId>
+				<version>${amber.version}</version>
+			</dependency>
+
+			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
 				<!-- <version>23.0</version> -->
@@ -206,11 +218,13 @@
 	</repositories>
 
 	<modules>
-		<module>alipay-sdk-java</module>
-		<module>wxpay-api</module>
-		<module>yunpian-api</module>
-		<module>amber-integration</module>
-		<module>amber-core</module>
-		<module>alipay-sdk-java-v1</module>
+		<module>amber_alipay-sdk-java_v1</module>
+		<module>amber_alipay-sdk-java</module>
+		
+		<module>amber_wxpay-api</module>
+		<module>amber_yunpian-api</module>
+		<module>amber_integration</module>
+		<module>amber_core</module>
+		
 	</modules>
 </project>
