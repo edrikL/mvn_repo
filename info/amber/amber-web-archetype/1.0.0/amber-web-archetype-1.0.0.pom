@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>info.amber</groupId>
-  <artifactId>amber-quickstart-archetype</artifactId>
+  <artifactId>amber-web-archetype</artifactId>
   <version>1.0.0</version>
   <packaging>maven-archetype</packaging>
 
-  <name>amber-quickstart-archetype</name>
+  <name>amber-web-archetype</name>
 
   <build>
     <extensions>
@@ -31,9 +31,9 @@
   <url>http://website.belongto.yourself</url>
 
   <scm>
-    <connection>scm:git:https://git.oschina.net/edrik/amber_uni.git/amber-quickstart</connection>
-    <developerConnection>scm:git:https://git.oschina.net/edrik/amber_uni.git/amber-quickstart</developerConnection>
-    <url>https://git.oschina.net/edrik/amber_uni.git/amber-quickstart</url>
+    <connection>scm:git:https://git.oschina.net/edrik/amber_uni.git/amber-web</connection>
+    <developerConnection>scm:git:https://git.oschina.net/edrik/amber_uni.git/amber-web</developerConnection>
+    <url>https://git.oschina.net/edrik/amber_uni.git/amber-web</url>
   </scm>
 
   <distributionManagement>
