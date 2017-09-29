@@ -40,10 +40,17 @@
 			<groupId>info.amber</groupId>
 			<artifactId>amber_alipay-sdk-java</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.jgroups</groupId>
+			<artifactId>jgroups</artifactId>
+			<version>3.6.10.Final</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.antlr</groupId>
 			<artifactId>ST4</artifactId>
-			<version>4.0.8</version>
 		</dependency>
 		<dependency>
 			<groupId>com.alibaba</groupId>
