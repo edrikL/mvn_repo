@@ -350,6 +350,6 @@
 		<module>amber_core</module>
 
 		<module>amber_vpay</module>
-		<module>amber_archived</module>
+		<module>amber-quickstart</module>
 	</modules>
 </project>
