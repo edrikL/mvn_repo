@@ -30,7 +30,7 @@
 		</dependency>
 		<dependency>
 			<groupId>info.amber</groupId>
-			<artifactId>amber_core</artifactId>
+			<artifactId>kiwi</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>info.amber</groupId>
