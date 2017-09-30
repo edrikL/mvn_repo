@@ -23,7 +23,8 @@
 		<logback.version>1.2.3</logback.version>
 		<hibernate.version>4.3.11.Final</hibernate.version>
 		<jackson.version>2.6.1</jackson.version>
-		<hibernate.version>5.2.3.Final</hibernate.version>
+		<!-- <hibernate.version>5.2.3.Final</hibernate.version> -->
+		<hibernate.version>4.3.11.Final</hibernate.version>
 		<aspectj.version>1.8.6</aspectj.version>
 	</properties>
 
@@ -454,9 +455,9 @@
 		<module>amber_wxpay-api</module>
 		<module>amber_yunpian-api</module>
 		<module>kiwi</module>
-		
+
 		<module>amber_integration</module>
-		
+
 
 		<module>amber_vpay</module>
 		<module>amber-web</module>
