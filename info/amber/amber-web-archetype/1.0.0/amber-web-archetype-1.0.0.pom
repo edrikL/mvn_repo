@@ -29,18 +29,4 @@
   </build>
 
   <url>http://website.belongto.yourself</url>
-
-  <scm>
-    <connection>scm:git:https://git.oschina.net/edrik/amber_uni.git/amber-web</connection>
-    <developerConnection>scm:git:https://git.oschina.net/edrik/amber_uni.git/amber-web</developerConnection>
-    <url>https://git.oschina.net/edrik/amber_uni.git/amber-web</url>
-  </scm>
-
-  <distributionManagement>
-    <repository>
-      <id>internal.repo</id>
-      <name>Temporary Staging Repository</name>
-      <url>file:///workspaceJEE/mvn_repo</url>
-    </repository>
-  </distributionManagement>
 </project>

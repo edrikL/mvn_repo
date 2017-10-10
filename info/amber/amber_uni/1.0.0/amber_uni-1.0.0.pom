@@ -13,20 +13,20 @@
 		<url>https://git.oschina.net/edrik/amber_uni.git</url>
 	</scm>
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jdk.version>1.6</jdk.version>
 		<mvn.repo.dir>/workspaceJEE/mvn_repo</mvn.repo.dir>
-		<amber.version>1.0.0</amber.version>
-		<spring.version>3.2.18.RELEASE</spring.version>
-		<spring.data.version>2.0.0.RC2</spring.data.version>
+		<jdk.version>1.6</jdk.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
 		<amber.alipay.sdk.version>2.0.0.20170901</amber.alipay.sdk.version>
-		<slf4j.version>1.7.25</slf4j.version>
-		<logback.version>1.2.3</logback.version>
-		<hibernate.version>4.3.11.Final</hibernate.version>
-		<jackson.version>2.6.1</jackson.version>
-		<!-- <hibernate.version>5.2.3.Final</hibernate.version> -->
-		<hibernate.version>4.3.11.Final</hibernate.version>
+		<amber.version>1.0.0</amber.version>
 		<aspectj.version>1.8.6</aspectj.version>
+		<hibernate.version>4.3.11.Final</hibernate.version>
+		<!-- <hibernate.version>5.2.3.Final</hibernate.version> -->
+		<jackson.version>2.6.1</jackson.version>
+		<logback.version>1.2.3</logback.version>
+		<slf4j.version>1.7.25</slf4j.version>
+		<spring.data.version>2.0.0.RC2</spring.data.version>
+		<spring.version>3.2.18.RELEASE</spring.version>
 	</properties>
 
 	<build>

@@ -9,7 +9,7 @@ echo ..........................................
 echo switch to master branch..
 echo checkout master..
 
-rem call git checkout master
+call git checkout master
 
 echo ....................................................
 echo git commit master..
