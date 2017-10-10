@@ -18,6 +18,7 @@
 		<mvn.repo.dir>/workspaceJEE/mvn_repo</mvn.repo.dir>
 		<amber.version>1.0.0</amber.version>
 		<spring.version>3.2.18.RELEASE</spring.version>
+		<spring.data.version>2.0.0.RC2</spring.data.version>
 		<amber.alipay.sdk.version>2.0.0.20170901</amber.alipay.sdk.version>
 		<slf4j.version>1.7.25</slf4j.version>
 		<logback.version>1.2.3</logback.version>
@@ -106,7 +107,6 @@
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
-				<!-- <version>23.0</version> -->
 				<version>20.0</version>
 				<!-- <version>19.0</version> -->
 			</dependency>
@@ -136,7 +136,11 @@
 				<artifactId>spring-test</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
-
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aop</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-context-support</artifactId>
@@ -165,14 +169,80 @@
 				<artifactId>spring-jdbc</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
+			<!-- <dependency> -->
+			<!-- <groupId>org.springframework.data</groupId> -->
+			<!-- <artifactId>spring-data-jpa</artifactId> -->
+			<!-- <version>${spring.data.version}</version> -->
+			<!-- </dependency> -->
+
+			<dependency>
+				<groupId>javax.persistence</groupId>
+				<artifactId>persistence-api</artifactId>
+				<version>1.0</version>
+			</dependency>
 
 			<!-- hibernate -->
+			<dependency>
+				<groupId>org.hibernate.javax.persistence</groupId>
+				<artifactId>hibernate-jpa-2.0-api</artifactId>
+				<version>1.0.1.Final</version>
+			</dependency>
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-entitymanager</artifactId>
 				<version>${hibernate.version}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-ehcache</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-hikaricp</artifactId>
+				<version>${hibernate.version}</version>
+			</dependency>
+
+			<!-- <dependency> -->
+			<!-- <groupId>org.hibernate.javax.persistence</groupId> -->
+			<!-- <artifactId>hibernate-jpa-2.1-api</artifactId> -->
+			<!-- <version>1.0.0.Final</version> -->
+			<!-- </dependency> -->
+			<dependency>
+				<groupId>net.sf.ehcache</groupId>
+				<artifactId>ehcache</artifactId>
+				<version>2.10.4</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sf.ehcache</groupId>
+				<artifactId>ehcache-core</artifactId>
+				<version>2.6.11</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.googlecode.ehcache-spring-annotations</groupId>
+				<artifactId>ehcache-spring-annotations</artifactId>
+				<version>1.2.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>aopalliance</groupId>
+				<artifactId>aopalliance</artifactId>
+				<version>1.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjweaver</artifactId>
+				<version>${aspect.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>aspectjrt</artifactId>
+				<version>${aspect.version}</version>
+			</dependency>
 
 			<!-- log -->
 			<dependency>
@@ -355,6 +425,12 @@
 				<version>1.1.2</version>
 			</dependency>
 			<dependency>
+				<groupId>com.zaxxer</groupId>
+				<artifactId>HikariCP-java6</artifactId>
+				<version>2.3.13</version>
+			</dependency>
+
+			<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
 				<version>42.1.4.jre6</version>
@@ -453,13 +529,12 @@
 		<module>amber_alipay-sdk-java</module>
 
 		<module>amber_wxpay-api</module>
-		<module>amber_yunpian-api</module>
-		<module>kiwi</module>
 
 		<module>amber_integration</module>
 
-
-		<module>amber_vpay</module>
 		<module>amber-web</module>
+
+		<module>kiwi</module>
+		<module>kiwi-assist</module>
 	</modules>
 </project>
