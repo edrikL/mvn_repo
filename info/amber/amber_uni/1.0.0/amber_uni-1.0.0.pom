@@ -19,7 +19,8 @@
 
 		<amber.alipay.sdk.version>2.0.0.20170901</amber.alipay.sdk.version>
 		<amber.version>1.0.0</amber.version>
-		<aspectj.version>1.8.6</aspectj.version>
+		<!-- <aspectj.version>1.8.6</aspectj.version> -->
+		<aspectj.version>1.6.12.RELEASE</aspectj.version>
 		<hibernate.version>4.3.11.Final</hibernate.version>
 		<!-- <hibernate.version>5.2.3.Final</hibernate.version> -->
 		<jackson.version>2.6.1</jackson.version>
