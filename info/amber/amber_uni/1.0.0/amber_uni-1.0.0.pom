@@ -565,5 +565,6 @@
 		<module>kiwi-assist</module>
 		<module>amber_spring-jpa</module>
 		<module>amber_springboot</module>
+		<module>amber_designPattern</module>
 	</modules>
 </project>
