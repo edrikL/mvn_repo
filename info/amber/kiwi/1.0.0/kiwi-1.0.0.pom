@@ -83,12 +83,16 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
+
 		<dependency>
 			<groupId>javolution</groupId>
 			<artifactId>javolution</artifactId>
 			<!-- <version>5.5.1</version> -->
 		</dependency>
 
+		<!-- qrcode -->
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>core</artifactId>
@@ -99,6 +103,12 @@
 			<artifactId>javase</artifactId>
 			<version>${zxing.version}</version>
 		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>com.github.kenglxn.qrgen</groupId> -->
+		<!-- <artifactId>javase</artifactId> -->
+		<!-- <version>2.3.0</version> -->
+		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
