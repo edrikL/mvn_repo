@@ -84,8 +84,6 @@
 			<scope>test</scope>
 		</dependency>
 
-
-
 		<dependency>
 			<groupId>javolution</groupId>
 			<artifactId>javolution</artifactId>
