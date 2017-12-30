@@ -15,7 +15,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>3.2.2.RELEASE</spring.version>
 		<zxing.version>2.2</zxing.version>
-		<!-- <zxing.version>2.3.0</zxing.version> -->
 	</properties>
 	<build>
 		<finalName>kiwi</finalName>
@@ -25,17 +24,7 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
-
 		<plugins>
-			<!-- <plugin> -->
-			<!-- <groupId>org.apache.maven.plugins</groupId> -->
-			<!-- <artifactId>maven-compiler-plugin</artifactId> -->
-			<!-- <configuration> -->
-			<!-- <source>jdk.version</source> -->
-			<!-- <target>jdk.version</target> -->
-			<!-- <encoding>UTF-8</encoding> -->
-			<!-- </configuration> -->
-			<!-- </plugin> -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -59,22 +48,6 @@
 					<skip>true</skip>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>tomcat-maven-plugin</artifactId>
-				<!-- <version>1.1</version> -->
-				<configuration>
-					<path>/papaya</path>
-					<port>80</port>
-					<uriEncoding>UTF-8</uriEncoding>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-
-			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
@@ -83,30 +56,19 @@
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>javolution</groupId>
 			<artifactId>javolution</artifactId>
-			<!-- <version>5.5.1</version> -->
 		</dependency>
-
 		<!-- qrcode -->
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>core</artifactId>
-			<version>${zxing.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.zxing</groupId>
 			<artifactId>javase</artifactId>
-			<version>${zxing.version}</version>
 		</dependency>
-
-		<!-- <dependency> -->
-		<!-- <groupId>com.github.kenglxn.qrgen</groupId> -->
-		<!-- <artifactId>javase</artifactId> -->
-		<!-- <version>2.3.0</version> -->
-		<!-- </dependency> -->
 
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -141,7 +103,6 @@
 		<dependency>
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
-			<!-- <version>2.8.2</version> -->
 		</dependency>
 
 		<dependency>
@@ -174,8 +135,6 @@
 			<artifactId>commons-configuration</artifactId>
 		</dependency>
 
-
-
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
@@ -188,8 +147,6 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpmime</artifactId>
 		</dependency>
-
-
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
