@@ -26,7 +26,11 @@
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<scope>test</scope>
+		</dependency>
 		<!-- okhttp2 -->
 		<!-- <dependency> -->
 		<!-- <groupId>com.squareup.okhttp</groupId> -->
