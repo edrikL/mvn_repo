@@ -14,7 +14,7 @@
 	<properties>
 		<jdk.version>1.6</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>3.2.2.RELEASE</spring.version>
+		<spring.version>3.2.18.RELEASE</spring.version>
 		<amber.version>1.0.0</amber.version>
 	</properties>
 	<packaging>jar</packaging>
@@ -29,6 +29,12 @@
 			<groupId>info.amber</groupId>
 			<artifactId>kiwi</artifactId>
 			<version>${amber.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-httpclient</groupId>
+					<artifactId>commons-httpclient</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
