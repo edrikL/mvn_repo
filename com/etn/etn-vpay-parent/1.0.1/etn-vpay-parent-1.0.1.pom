@@ -1,8 +1,4 @@
-<project
-	xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.etn</groupId>
 	<artifactId>etn-vpay-parent</artifactId>
@@ -78,7 +74,6 @@
 				<version>${vers.spring}</version>
 				<scope>test</scope>
 			</dependency>
-		 
 			<dependency>
 				<groupId>info.amber</groupId>
 				<artifactId>kiwi</artifactId>
@@ -98,6 +93,13 @@
 				<groupId>info.amber</groupId>
 				<artifactId>amber_alipay-sdk-java</artifactId>
 				<version>${vers.amber.alipay.sdk}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.quartz-scheduler</groupId>
+				<artifactId>quartz</artifactId>
+				<!-- <version>2.3.0</version> -->
+				<!-- <version>1.8.5</version> -->
+				<version>2.1.7</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.zxing</groupId>
@@ -148,6 +150,11 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-context</artifactId>
+				<version>${vers.spring}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
 				<version>${vers.spring}</version>
 			</dependency>
 			<dependency>
@@ -390,6 +397,6 @@
 	</repositories>
 	<modules>
 		<module>etn-vpay</module>
-		<module>etn-vpay-api</module> 
+		<module>etn-vpay-api</module>
 	</modules>
 </project>
