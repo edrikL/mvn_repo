@@ -1,200 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>me.kiwi</groupId>
-		<artifactId>kiwi</artifactId>
-		<version>1.0.0</version>
-	</parent> 
-	<artifactId>kiwi-codegenerator</artifactId>
-	<name>kiwi-codegenerator</name>
-	<description>Demo project for Spring Boot</description>
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<!-- <dependency> -->
-		<!-- <groupId>org.springframework.boot</groupId> -->
-		<!-- <artifactId>spring-boot-starter-data-jdbc</artifactId> -->
-		<!-- </dependency> -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
+  <artifactId>kiwi-codegenerator</artifactId>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <!--fork :使devtools: restart 生效 -->
+          <fork>true</fork>
+          <jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1050</jvmArguments>
+        </configuration>
+        <groupId>org.springframework.boot</groupId>
+      </plugin>
+    </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>application**.yml</exclude>
+          <exclude>application**.properties</exclude>
+        </excludes>
+      </resource>
+      <resource>
+        <!--配置文件路径 -->
+        <directory>src/main/resources</directory> <!--这里对应项目存放配置文件的目录 -->
+        <!--开启filtering功能; enable profile -->
+        <filtering>true</filtering>
+        <includes>
+          <include>application.yml</include>
+          <include>application.properties</include>
+          <include>application-mysql.yml</include>
+          <include>application-pgsql.yml</include>
+          <include>application-${profile.id}.yml</include>
+          <include>application-${profile.id}.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+  <dependencies>
+    <dependency>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <!-- <dependency> -->
+    <!-- <groupId>org.springframework.boot</groupId> -->
+    <!-- <artifactId>spring-boot-starter-data-jdbc</artifactId> -->
+    <!-- </dependency> -->
+    <dependency>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
 
-		
-		<dependency>
-			<groupId>p6spy</groupId>
-			<artifactId>p6spy</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.velocity</groupId>
-			<artifactId>velocity</artifactId>
 
-		</dependency>
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-		</dependency>
+    <dependency>
+      <artifactId>p6spy</artifactId>
+      <groupId>p6spy</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>mysql-connector-java</artifactId>
+      <groupId>mysql</groupId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>postgresql</artifactId>
+      <groupId>org.postgresql</groupId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>velocity</artifactId>
+      <groupId>org.apache.velocity</groupId>
 
-		<!-- <dependency> -->
-		<!-- <groupId>commons-httpclient</groupId> -->
-		<!-- <artifactId>commons-httpclient</artifactId> -->
-		<!-- <version>3.1</version> -->
-		<!-- </dependency> -->
-		<dependency>
-			<groupId>org.apache.httpcomponents</groupId>
-			<artifactId>httpclient</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>commons-beanutils</groupId>
-			<artifactId>commons-beanutils</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-text</artifactId>
-		</dependency>
+    </dependency>
+    <dependency>
+      <artifactId>guava</artifactId>
+      <groupId>com.google.guava</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>commons-collections</artifactId>
+      <groupId>commons-collections</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>httpmime</artifactId>
+      <groupId>org.apache.httpcomponents</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>httpclient</artifactId>
+      <groupId>org.apache.httpcomponents</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>commons-beanutils</artifactId>
+      <groupId>commons-beanutils</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>commons-lang3</artifactId>
+      <groupId>org.apache.commons</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>commons-io</artifactId>
+      <groupId>commons-io</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>commons-text</artifactId>
+      <groupId>org.apache.commons</groupId>
+    </dependency>
 
-		<dependency>
-			<groupId>org.yaml</groupId>
-			<artifactId>snakeyaml</artifactId>
-		</dependency>
+    <dependency>
+      <artifactId>snakeyaml</artifactId>
+      <groupId>org.yaml</groupId>
+    </dependency>
 
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-	</dependencies>
-	<profiles>
-		<profile>
-			<id>dev</id>
-			<properties>
-				<project.packing>jar</project.packing>
-				<profile.id>dev</profile.id>
-			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<dependencies>
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-undertow</artifactId>
-				</dependency>
-			</dependencies>
-		</profile>
-		<profile>
-			<id>test</id>
-			<properties>
-				<project.packing>jar</project.packing>
-				<profile.id>test</profile.id>
-			</properties>
-			<dependencies>
-				<dependency>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-jetty</artifactId>
-				</dependency>
-				<dependency>
-					<groupId>javax</groupId>
-					<artifactId>javaee-api</artifactId>
-					<version>8.0</version>
-				</dependency>
-			</dependencies>
-		</profile>
-		<profile>
-			<id>prod</id>
-			<properties>
-				<project.packing>war</project.packing>
-				<profile.id>prod</profile.id>
-			</properties>
-			<dependencies>
-				<dependency>
-					<groupId>javax.servlet</groupId>
-					<artifactId>javax.servlet-api</artifactId>
-					<scope>provided</scope>
-				</dependency>
-			</dependencies>
-		</profile>
-	</profiles>
-	<build>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<excludes>
-					<exclude>application**.yml</exclude>
-					<exclude>application**.properties</exclude>
-				</excludes>								
-			</resource>
-			<resource>
-				<!--配置文件路径 -->
-				<directory>src/main/resources</directory> <!--这里对应项目存放配置文件的目录 -->
-				<!--开启filtering功能; enable profile -->
-				<filtering>true</filtering>
-				<includes>
-					<include>application.yml</include>
-					<include>application.properties</include>
-					<include>application-mysql.yml</include>
-					<include>application-pgsql.yml</include>
-					<include>application-${profile.id}.yml</include>
-					<include>application-${profile.id}.properties</include>
-				</includes>
-			</resource>
-		</resources>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<!--fork :使devtools: restart 生效 -->
-					<fork>true</fork>
-					<jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1050</jvmArguments>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-devtools</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <optional>true</optional>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <exclusions>
+        <exclusion>
+          <artifactId>junit-vintage-engine</artifactId>
+          <groupId>org.junit.vintage</groupId>
+        </exclusion>
+      </exclusions>
+      <groupId>org.springframework.boot</groupId>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <description>Demo project for Spring Boot</description>
+  <modelVersion>4.0.0</modelVersion>
+  <name>kiwi-codegenerator</name>
+  <parent>
+    <artifactId>kiwi</artifactId>
+    <groupId>me.kiwi</groupId>
+    <version>1.0.0</version>
+  </parent>
+  <profiles>
+    <profile>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <dependencies>
+        <dependency>
+          <artifactId>spring-boot-starter-undertow</artifactId>
+          <groupId>org.springframework.boot</groupId>
+          <scope>provided</scope>
+        </dependency>
+      </dependencies>
+      <id>dev</id>
+      <properties>
+        <profile.id>dev</profile.id>
+        <project.packing>jar</project.packing>
+      </properties>
+    </profile>
+    <profile>
+      <dependencies>
+        <dependency>
+          <artifactId>spring-boot-starter-jetty</artifactId>
+          <groupId>org.springframework.boot</groupId>
+          <scope>provided</scope>
+        </dependency>
+        <dependency>
+          <artifactId>javaee-api</artifactId>
+          <groupId>javax</groupId>
+          <version>8.0</version>
+        </dependency>
+      </dependencies>
+      <id>test</id>
+      <properties>
+        <profile.id>test</profile.id>
+        <project.packing>jar</project.packing>
+      </properties>
+    </profile>
+    <profile>
+      <dependencies>
+        <dependency>
+          <artifactId>javax.servlet-api</artifactId>
+          <groupId>javax.servlet</groupId>
+          <scope>provided</scope>
+        </dependency>
+      </dependencies>
+      <id>prod</id>
+      <properties>
+        <profile.id>prod</profile.id>
+        <project.packing>jar</project.packing>
+      </properties>
+    </profile>
+  </profiles>
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
 </project>
