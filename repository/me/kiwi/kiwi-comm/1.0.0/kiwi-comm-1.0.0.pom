@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>me.kiwi</groupId>
-        <artifactId>kiwi</artifactId>
-        <version>1.0.0</version>
-    </parent>
-    <groupId>me.kiwi</groupId>
-    <artifactId>kiwi-comm</artifactId>
-    <version>1.0.0</version>
-    <name>kiwi-comm</name>
-    <description>Demo project for Spring Boot</description>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>me.kiwi</groupId>
+		<artifactId>kiwi</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	
+	<groupId>me.kiwi</groupId>
+	<artifactId>kiwi-comm</artifactId>
+	<version>1.0.0</version>
+	<name>kiwi-comm</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>me.kiwi</groupId>
-            <artifactId>kiwi-kit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
-
-    </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>me.kiwi</groupId>
+			<artifactId>kiwi-kit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+	</dependencies>
 
 
 </project>
