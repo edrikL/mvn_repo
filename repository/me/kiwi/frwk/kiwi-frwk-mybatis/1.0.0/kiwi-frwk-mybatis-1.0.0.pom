@@ -1,15 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>kiwi-frwk</artifactId>
-        <groupId>me.kiwi.frwk</groupId>
-        <version>1.0.0</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>kiwi-frwk-mybatis</artifactId>
-
-
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>kiwi-frwk-mybatis</artifactId>
+  <dependencies>
+    <dependency>
+      <artifactId>p6spy</artifactId>
+      <groupId>p6spy</groupId>
+    </dependency>
+    <!-- jdbc -->
+    <dependency>
+      <artifactId>spring-boot-starter-jdbc</artifactId>
+      <groupId>org.springframework.boot</groupId>
+    </dependency>
+    <!-- mybatis -->
+    <dependency>
+      <artifactId>mybatis-spring-boot-starter</artifactId>
+      <groupId>org.mybatis.spring.boot</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>mybatis-dynamic-sql</artifactId>
+      <groupId>org.mybatis.dynamic-sql</groupId>
+      <version>1.1.1</version>
+    </dependency>
+    <!-- mybatis plus -->
+    <dependency>
+      <artifactId>mybatis-plus-boot-starter</artifactId>
+      <groupId>com.baomidou</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>mybatis-typehandlers-jsr310</artifactId>
+      <groupId>org.mybatis</groupId>
+    </dependency>
+  </dependencies>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>kiwi-frwk</artifactId>
+    <groupId>me.kiwi.frwk</groupId>
+    <version>1.0.0</version>
+  </parent>
 </project>

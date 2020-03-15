@@ -19,12 +19,12 @@
 
     <!-- qrcode -->
     <dependency>
-      <groupId>com.google.zxing</groupId>
       <artifactId>core</artifactId>
+      <groupId>com.google.zxing</groupId>
     </dependency>
     <dependency>
-      <groupId>com.google.zxing</groupId>
       <artifactId>javase</artifactId>
+      <groupId>com.google.zxing</groupId>
     </dependency>
     <dependency>
       <artifactId>hutool-all</artifactId>
@@ -47,20 +47,16 @@
       <groupId>org.apache.httpcomponents</groupId>
     </dependency>
     <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpmime</artifactId>
+      <groupId>org.apache.httpcomponents</groupId>
     </dependency>
     <dependency>
-      <groupId>commons-httpclient</groupId>
       <artifactId>commons-httpclient</artifactId>
+      <groupId>commons-httpclient</groupId>
     </dependency>
     <dependency>
       <artifactId>snakeyaml</artifactId>
       <groupId>org.yaml</groupId>
-    </dependency>
-    <dependency>
-      <artifactId>hutool-all</artifactId>
-      <groupId>cn.hutool</groupId>
     </dependency>
     <dependency>
       <artifactId>spring-context</artifactId>
@@ -74,6 +70,11 @@
     </dependency>
     <dependency>
       <artifactId>spring-boot</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <artifactId>spring-boot-autoconfigure</artifactId>
       <groupId>org.springframework.boot</groupId>
       <optional>true</optional>
     </dependency>
@@ -97,10 +98,13 @@
     </dependency>
     <!-- http://commons.apache.org/ -->
     <dependency>
+      <artifactId>commons-logging</artifactId>
+      <groupId>commons-logging</groupId>
+    </dependency>
+    <dependency>
       <artifactId>commons-codec</artifactId>
       <groupId>commons-codec</groupId>
     </dependency>
-
     <dependency>
       <artifactId>httpclient</artifactId>
       <groupId>org.apache.httpcomponents</groupId>

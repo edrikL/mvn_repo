@@ -9,6 +9,7 @@
         <module>kiwi-frwk-jpa</module>
         <module>kiwi-frwk-webmvc</module>
         <module>kiwi-frwk-feign</module>
+      <module>kiwi-frwk-shiro</module>
     </modules>
     <parent>
         <groupId>me.kiwi</groupId>

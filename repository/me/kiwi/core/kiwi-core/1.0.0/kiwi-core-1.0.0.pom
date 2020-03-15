@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>kiwi-core</artifactId>
+  <build>
+  </build>
+  <description>Demo project for Spring Boot</description>
+  <groupId>me.kiwi.core</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <modules>
+    <module>kiwi-core-biz</module>
+    <module>kiwi-core-profile</module>
+    <module>kiwi-core-cms</module>
+    <module>kiwi-core-sys</module>
+    <module>kiwi-core-pms</module>
+    <module>kiwi-core-crm</module>
+  </modules>
+  <name>kiwi-core</name>
+
+  <packaging>pom</packaging>
+  <parent>
+    <artifactId>kiwi</artifactId>
+    <groupId>me.kiwi</groupId>
+    <version>1.0.0</version>
+  </parent>
+
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
+  <version>1.0.0</version>
+</project>
