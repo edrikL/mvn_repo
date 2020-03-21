@@ -565,6 +565,18 @@
         <version>4.0.1</version>
       </dependency>
 
+      <dependency>
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna</artifactId>
+        <version>${jna.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.java.dev.jna</groupId>
+        <artifactId>jna-platform</artifactId>
+        <version>${jna.version}</version>
+      </dependency>
+
+
     </dependencies>
   </dependencyManagement>
   <description>Demo project for Spring Boot</description>
@@ -624,6 +636,7 @@
     <spring.version>5.2.1.RELEASE</spring.version>
     <swagger2.version>2.9.2</swagger2.version>
     <zxing.version>3.4.0</zxing.version>
+    <jna.version>5.5.0</jna.version>
   </properties>
   <repositories>
     <repository>
