@@ -566,11 +566,11 @@
 			<url>https://github.com/abel533/ECharts/master</url>
 			<!-- <url>https://raw.github.com/abel533/ECharts/master</url> -->
 		</repository>
-		<repository>
-			<id>local-nexus</id>
-			<name>local-center</name>
-			<url>http://127.0.0.1:8081/nexus/content/groups/public/</url>
-		</repository>
+<!--		<repository>-->
+<!--			<id>local-nexus</id>-->
+<!--			<name>local-center</name>-->
+<!--			<url>http://127.0.0.1:8081/nexus/content/groups/public/</url>-->
+<!--		</repository>-->
 		<repository>
 			<id>public releases</id>
 			<name>public releases</name>
